@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: aquamarine;
+    background-color: beige;
     color: black;
     text-align: center;
     margin: 0;
@@ -11,7 +11,7 @@ body {
     max-width: 80%;
     margin: 50px auto;
     padding: 20px;
-    background-color: white;
+    background-color: aquamarine;
     border-radius: 8px;
     
 }
@@ -56,6 +56,9 @@ button img {
     padding: 10px 20px;
     font-size: 16px;
 }
+#reglas:hover{
+    opacity: 0.8;
+}
 
 
 
@@ -71,7 +74,11 @@ button img {
 }
 
 #reiniciar:hover {
-    background-color: #45a049;
+    opacity: 0.8;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width: 600px) {
