@@ -1,0 +1,54 @@
+#matriz {
+    display: grid;
+    grid-column: auto;
+    gap: 5px;
+    
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color:chocolate;
+}
+
+
+body{
+    background-color:beige;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-style:italic;
+    color:blueviolet;
+}
+#reglas{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 50px;
+    
+}
+p{
+    margin: 0 auto;
+    background-color: aqua;
+    width: 10%;
+    align-content: center;
+    padding: 10px;
+}
+#contenedorReglas{
+    padding: 10px;
+}

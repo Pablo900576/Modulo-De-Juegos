@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="controlador.js"></script>
+    <title>Juego de Sheldon Cooper</title>
+
+</head>
+<body>
+    
+ 
+    <div id="general">
+        <h1><a href="https://www.youtube.com/watch?v=_tsy4q9ibAE">Juego Piedra, papel, tijera, lagarto o spock</a></h1>
+        <div id="puntuacion">
+            <p>Tu puntuación: <span id="usuarioPuntuacion">0</span></p>
+            <p>Puntuación de la máquina: <span id="maquinaPuntuacion">0</span></p>
+        </div>
+        <div id="opciones">
+            <button onclick="jugar('Piedra')"><img src="Piedra.png" alt="Piedra"></button>
+            <button onclick="jugar('Papel')"><img src="https://static.vecteezy.com/system/resources/thumbnails/003/818/224/small/hand-human-open-free-vector.jpg" alt="Papel"></button>
+            <button onclick="jugar('Tijera')"><img src="https://images.vexels.com/media/users/3/194506/isolated/preview/547f0c76f1150ed7d482a4a88b03d130-dibujos-animados-de-signo-de-mano-de-paz.png" alt="Tijera"></button>
+            <button onclick="jugar('Lagarto')"><img src="Lagarto.png" alt="Lagarto"></button>
+            <button onclick="jugar('Spock')"><img src="Spock.png" alt="Spock"></button>
+        </div>
+        <div id="resultado">
+            <p id="seleccionar">¡Selecciona una opción!</p>
+            <p>Tu elección: <span id="tuEleccion"></span></p>
+            <p>Elección de la computadora: <span id="maquinaEleccion"></span></p>
+        </div>
+        <button id="reiniciar" onclick="reiniciar()">Volver a jugar</button>
+    </div>
+    <button onclick="mostrarReglas()" id="reglas">Reglas</button>
+    <div id="contenedorReglas" style="display: none;">
+        <h1>Reglas del Juego</h1>
+        
+        <P>Tijeras cortan papel</P>
+        <p>Papel cubre piedra</p> <p>
+        <p> Piedra aplasta lagarto</p> 
+        <p> Lagarto envenena Spock</p> 
+        <p> Spock destruye tijeras</p> 
+        <p>Tijeras decapitan lagarto</p> 
+        <p>Lagarto come papel</p> 
+        <p>Papel desaprueba Spock</p> 
+         <p>Spock vaporiza piedra</p> 
+        <p>Piedra aplasta tijeras</P>
+        <button onclick="ocultarReglas()" id="reglas">Cerrar</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+    "es":{
+        "sheldon": "PIEDRA PAPEL Y TIJERA",
+        "buscaminas":"BUSCATRUFAS",
+        "simonDice":"JULIO DICE",
+        "historia":"HISTORIA TO GUAPA"
+    },
+    "en":{
+        "sheldon": "ROCK, PAPER AND SCISSORS",
+        "buscaminas":"TRUFFLESWEEPERS",
+        "simonDice":"JULIO SAYS",
+        "historia":"BEAUTIFUL STORY"
+    },
+    "pt":{
+        "sheldon": "PEDRA, PAPEL E TESOURA",
+        "buscaminas":"CAÇA-TRUFAS",
+        "simonDice":"JULIO DIZ",
+        "historia":"BELA HISTÓRIA"
+    },
+    "fr":{
+        "sheldon": "PIERRE, PAPIER ET CISEAUX",
+        "buscaminas":"DRAGUEURS DE TRUFFES",
+        "simonDice":"JULIO DIT",
+        "historia":"BELLE HISTOIRE"
+    }
+    
+}

@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: beige; 
+}
+
+#general {
+
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 50px rgba(0,0,0,1); 
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: blue;
+    color: white; 
+    border: none;
+    border-radius: 15px; 
+    font-size: 17px; 
+    
+}
+
+button:hover {
+    background-color: orange; 
+}
+
+
+@media screen and (max-width: 768px) {
+    body, html {
+        font-size: 14px; 
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 14px; 
+    }
+}
