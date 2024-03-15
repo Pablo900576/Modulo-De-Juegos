@@ -77,3 +77,47 @@ function mostrarReglas() {
 function ocultarReglas() {
     document.getElementById('contenedorReglas').style.display = 'none';
 }
+
+
+
+var traducciones={
+    "es":{
+        "titulo":"EL BUSCATRUFAS",
+        "reglas":"Reglas",
+        "regla1":"Trufa cercana",
+        "regla2":"No hay trufa ni trufas cerca",
+        "regla3":"BOOM!"
+    },
+    "en":{
+        "titulo":"TRUFFLESWEEPERS",
+        "reglas":"Rules",
+        "regla1":"Truffle nearby",
+        "regla2":"No truffle or truffles nearby",
+        "regla3":"BOOM!"
+    },
+    "pt":{
+        "titulo":"CAÇA-TRUFAS",
+        "reglas":"Réguas",
+        "regla1":"Nos arredores Trufa",
+        "regla2":"Sem trufas ou trufas nas proximidades",
+        "regla3":"BOOM!"
+    },
+    "fr":{
+        "titulo":"DRAGUEURS DE TRUFFES",
+        "reglas":"Règlement",
+        "regla1":"Truffe à proximité",
+        "regla2":"Pas de truffe ou de truffes à proximité",
+        "regla3":"BOOM!"
+    }
+}
+    document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('selectorIdioma').addEventListener('change', function(){
+        var idiomaSeleccionado=this.value;
+
+        document.getElementById('titulo').innerHTML = traducciones[idiomaSeleccionado].titulo;
+        document.getElementById('reglas').innerHTML = traducciones[idiomaSeleccionado].reglas;
+        document.getElementById('regla1').innerHTML = traducciones[idiomaSeleccionado].regla1;
+        document.getElementById('regla2').innerHTML = traducciones[idiomaSeleccionado].regla2;
+        document.getElementById('regla3').innerHTML = traducciones[idiomaSeleccionado].regla3;
+    })
+})

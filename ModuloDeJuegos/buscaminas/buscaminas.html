@@ -8,14 +8,20 @@
     <title>Buscatrufas</title>
 </head>
 <body onload="inicializar()">
+    <select id="selectorIdioma">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+        <option value="pt">Português</option>
+        <option value="fr">Français</option>
+    </select>
     <h1 id="titulo">EL BUSCATRUFAS</h1>
     <div id="matriz"></div>
     <button onclick="mostrarReglas()" id="reglas"><u>Reglas</u></button>
     <div id="reiniciar"></div>
     <div id="contenedorReglas" style="display: none;">
-        <p style="color: red;">Trufa cercana</p>
-        <p style="color: white; ">No hay trufa ni trufas cercas</p>
-        <p style="color: black;">BOOM!</p>
+        <p style="color: red;" id="regla1">Trufa cercana</p>
+        <p style="color: white;"id="regla2">No hay trufa ni trufas cerca</p>
+        <p style="color: black;" id="regla3" >BOOM!</p>
         <button onclick="ocultarReglas()" id="reglas"><u>Cerrar</u></button>
     </div>
 </body>

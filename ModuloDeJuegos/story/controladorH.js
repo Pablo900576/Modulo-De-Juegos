@@ -107,8 +107,9 @@ const miHistoria = {
 
 
 
-const traducciones = {
-    es: {
+
+var traducciones = {
+    "es": {
         historia: {
             intro: "Estás en la puerta del IES Fleming y tienes que entrar para afrontar un maravilloso año de DAM, te dan una elección, entras al instituto o no?",
             comienzo: "El curso se empieza a hacer mucho más pesado con el paso de los meses, llega diciembre y te dan otra elección, sigues o te vas?",
@@ -139,7 +140,7 @@ const traducciones = {
             "Antes de que salga el número te vas por cagao y te vas a tomar unas al master.": "Antes de que salga el número te vas por cagao y te vas a tomar unas al master."
         }
     },
-    en: {
+    "en": {
         historia:{
             intro: "You are at the door of IES Fleming and you have to enter to face a wonderful year of DAM, they give you a choice, do you enter the institute or not?",
             comienzo:"The course begins to get much heavier as the months go by, December arrives and they give you another choice, do you continue or leave?",
@@ -169,7 +170,7 @@ const traducciones = {
             "Antes de que salga el número te vas por cagao y te vas a tomar unas al master.":"Before the number comes out, you're going to get shit and go take some to the master."
         }
     },
-    pt: {
+    "pt": {
         historia:{
             intro: "Você está na porta do IES Fleming e tem que entrar para enfrentar um ano maravilhoso de DAM, eles te dão uma escolha, você entra no instituto ou não?",
             comienzo:"O curso começa a ficar bem mais pesado com o passar dos meses, chega dezembro e te dão outra escolha, você continua ou sai?",
@@ -199,7 +200,7 @@ const traducciones = {
             "Antes de que salga el número te vas por cagao y te vas a tomar unas al master.":"Antes que o número saia, você vai pegar uma merda e vai levar para o mestre."
         }
     },
-    fr: {
+    "fr": {
         historia:{
             intro: "Vous êtes à la porte de l'IES Fleming et vous devez y entrer pour affronter une merveilleuse année de DAM, ils vous donnent le choix, entrez-vous à l'institut ou pas ?",
             comienzo:"Le cours commence à devenir beaucoup plus lourd au fil des mois, décembre arrive et on te donne un autre choix, tu continues ou tu pars ?",
@@ -229,7 +230,25 @@ const traducciones = {
             "Antes de que salga el número te vas por cagao y te vas a tomar unas al master.":"Avant que le numéro ne sorte, tu vas te faire chier et aller en apporter au maître."
         }
     }
-};
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('selectorIdioma').addEventListener('change', function(){
+        var idiomaSeleccionado=this.value;
+
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].intro;
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].comienzo;
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].segundoTrimestre;
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].portugal;
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].portugal2;
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].portugalRico;
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].portugalPobre;
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].tercerTrimestre;
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].finBueno;
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].fin;
+        document.getElementById('historia').innerHTML = traducciones[idiomaSeleccionado]['historia'].finMalo;
+    })
+});
 
 window.onload = () => {
     const juego = new Juego(miHistoria);

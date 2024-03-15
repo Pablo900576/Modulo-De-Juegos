@@ -8,9 +8,15 @@
     <title>Julio Dice</title>
 </head>
 <body>
-    <h1><button id="titulo"><a href="https://www.youtube.com/watch?v=plzq2F8FYmk&ab_channel=OPENACTING">JULIO</a> DICE</button></h1>
+    <select id="selectorIdioma">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+        <option value="pt">Português</option>
+        <option value="fr">Français</option>
+    </select>
+    <h1><button id="titulo"><a href="https://www.youtube.com/watch?v=plzq2F8FYmk&ab_channel=OPENACTING">JULIO</a><div id="dice"> DICE</div></button></h1>
     <div id="general">
-        <div id="puntuacion">Puntuacion: <span id="valorPuntuacion">0</span></div>
+        <div id="puntuacion"><div id="puntuacionn">Puntuacion: </div><span id="valorPuntuacion">0</span></div>
         <div id="colores">
             <button class="color" id="rojo"></button>
             <button class="color" id="azul"></button>
@@ -20,7 +26,7 @@
         <button id="empezar" onclick="comenzar()">Jugar</button><br>
         <button onclick="mostrarReglas()" id="reglas"><u>Reglas</u></button>
         <div id="contenedorReglas" style="display: none;">
-            <p>En este juego de "Simón Dice", pondremos a prueba tu memoria y habilidades de observación. El objetivo del juego es seguir una secuencia de colores y sonidos generada por la computadora. El juego se volverá más desafiante a medida que avances, ya que la secuencia se hará más larga y complicada. ¡Veamos quién puede llegar más lejos y obtener la puntuación más alta!</p>
+            <p id="texto">En este juego de "Simón Dice", pondremos a prueba tu memoria y habilidades de observación. El objetivo del juego es seguir una secuencia de colores y sonidos generada por la computadora. El juego se volverá más desafiante a medida que avances, ya que la secuencia se hará más larga y complicada. ¡Veamos quién puede llegar más lejos y obtener la puntuación más alta!</p>
             <button onclick="ocultarReglas()" id="reglas" class="Cerrar"><u>Cerrar</u></button>
         </div>
     </div>
